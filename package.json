@@ -1,0 +1,39 @@
+{
+  "name": "nft-minting-dapp",
+  "version": "1.0.0",
+  "description": "Open-source NFT Minting DApp with ERC-721, Hardhat, and Next.js",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:local": "hardhat run scripts/deploy.js --network hardhat",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network mainnet",
+    "verify": "hardhat run scripts/verify.js",
+    "node": "hardhat node",
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "frontend:start": "cd frontend && npm start"
+  },
+  "keywords": [
+    "nft",
+    "erc721",
+    "ethereum",
+    "dapp",
+    "web3",
+    "hardhat",
+    "nextjs",
+    "ipfs"
+  ],
+  "author": "Raita",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "hardhat": "^2.19.4",
+    "dotenv": "^16.3.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.1"
+  }
+}
